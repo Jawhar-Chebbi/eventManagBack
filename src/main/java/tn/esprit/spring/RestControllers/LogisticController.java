@@ -1,15 +1,22 @@
 
 package tn.esprit.spring.RestControllers;
 
-import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import tn.esprit.spring.Entities.Logistics;
 import tn.esprit.spring.Services.IServiceLogistics;
 
 @RestController
-@AllArgsConstructor
-public class LogisticController {
+@RequestMapping(value = LogisticController.ENDPOINT)
+public class LogisticController extends CrudController<Logistics>{
 
-    IServiceLogistics iServiceLogistics;
+    public static final String ENDPOINT = ROOT_ENDPOINT + "/logistic";
+
+    private final IServiceLogistics iServiceLogistics;
 
 
+    public LogisticController(IServiceLogistics iServiceLogistics) {
+        super(iServiceLogistics);
+        this.iServiceLogistics = iServiceLogistics;
+    }
 }

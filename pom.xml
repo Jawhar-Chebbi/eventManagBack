@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>tn.esprit.spring</groupId>
-    <artifactId>TestVoyage</artifactId>
+    <artifactId>EventManagement</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>TestVoyage</name>
-    <description>TestVoyage</description>
+    <name>EventManagement</name>
+    <description>EventManagement</description>
     <properties>
         <java.version>11</java.version>
     </properties>

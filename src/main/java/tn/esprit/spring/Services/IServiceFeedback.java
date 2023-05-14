@@ -1,4 +1,6 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceFeedback {
+import tn.esprit.spring.Entities.Feedback;
+
+public interface IServiceFeedback extends IServiceCrud<Feedback>{
  }

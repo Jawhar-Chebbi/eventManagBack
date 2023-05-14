@@ -1,4 +1,6 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceComments {
+import tn.esprit.spring.Entities.Comments;
+
+public interface IServiceComments extends IServiceCrud<Comments> {
  }

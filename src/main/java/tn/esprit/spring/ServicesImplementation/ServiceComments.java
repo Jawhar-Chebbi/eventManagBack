@@ -1,15 +1,16 @@
 package tn.esprit.spring.ServicesImplementation;
 
-import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import tn.esprit.spring.Entities.Comments;
 import tn.esprit.spring.Repositories.CommentsRepo;
 import tn.esprit.spring.Services.IServiceComments;
 
 @Service
 @Slf4j
-@AllArgsConstructor
-public class ServiceComments implements IServiceComments {
+public class ServiceComments  extends CrudService<Comments>  implements IServiceComments {
 
-    CommentsRepo commentsRepo;
+    public ServiceComments(CommentsRepo commentsRepo) {
+        super(commentsRepo);
+    }
 }

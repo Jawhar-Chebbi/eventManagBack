@@ -20,7 +20,7 @@ public class Billing implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idBilling;
+    long id;
     @Temporal(TemporalType.DATE)
     Date dateBilling;
     String codeTVA;

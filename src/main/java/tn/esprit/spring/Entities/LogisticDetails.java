@@ -18,7 +18,7 @@ import java.io.Serializable;
 public class LogisticDetails implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idLogDetail;
+    long id;
     double cost;
     String libele;
     @ManyToOne

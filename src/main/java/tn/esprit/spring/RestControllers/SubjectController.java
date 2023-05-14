@@ -1,15 +1,22 @@
 
 package tn.esprit.spring.RestControllers;
 
-import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tn.esprit.spring.Services.IServiceSeminar;
+import tn.esprit.spring.Entities.Subject;
+import tn.esprit.spring.Services.IServiceSubject;
 
 @RestController
-@AllArgsConstructor
-public class SubjectController {
+@RequestMapping(value = SubjectController.ENDPOINT)
+public class SubjectController extends CrudController<Subject>{
 
-    IServiceSeminar iServiceSeminar;
+    public static final String ENDPOINT = ROOT_ENDPOINT + "/subject";
+
+    private final IServiceSubject iServiceSubject;
 
 
+    public SubjectController(IServiceSubject iServiceSubject) {
+        super(iServiceSubject);
+        this.iServiceSubject = iServiceSubject;
+    }
 }

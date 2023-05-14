@@ -16,7 +16,7 @@ import java.io.Serializable;
 public class ReservationDetails implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idReservationDetails;
+    long id;
     double  price;
     String libele;
     //
