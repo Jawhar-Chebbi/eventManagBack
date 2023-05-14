@@ -17,7 +17,7 @@ import java.util.List;
 public class Reservation implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idReservation;
+    long id;
     int nbrPlace;
     boolean paymentStatus;
     double frais;

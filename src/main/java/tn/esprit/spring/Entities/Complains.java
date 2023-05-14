@@ -19,7 +19,7 @@ import java.util.Date;
 public class Complains implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idComplains;
+    long id;
     @Temporal(TemporalType.DATE)
     Date dateComplains;
     String description;

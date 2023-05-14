@@ -1,4 +1,6 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceComplains {
+import tn.esprit.spring.Entities.Complains;
+
+public interface IServiceComplains extends IServiceCrud<Complains>{
  }

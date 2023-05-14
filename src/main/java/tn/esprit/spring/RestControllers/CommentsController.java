@@ -1,14 +1,21 @@
 package tn.esprit.spring.RestControllers;
 
-import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import tn.esprit.spring.Entities.Comments;
 import tn.esprit.spring.Services.IServiceComments;
 
 @RestController
-@AllArgsConstructor
-public class CommentsController {
+@RequestMapping(value = CommentsController.ENDPOINT)
+public class CommentsController extends CrudController<Comments>{
 
-    IServiceComments iServiceComments;
+    public static final String ENDPOINT = ROOT_ENDPOINT + "/comments";
+
+    private final IServiceComments iServiceComments;
 
 
+    public CommentsController(IServiceComments iServiceComments) {
+        super(iServiceComments);
+        this.iServiceComments = iServiceComments;
+    }
 }

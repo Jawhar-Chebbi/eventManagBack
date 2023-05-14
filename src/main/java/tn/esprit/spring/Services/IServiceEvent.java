@@ -1,4 +1,6 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceEvent {
+import tn.esprit.spring.Entities.Event;
+
+public interface IServiceEvent extends IServiceCrud<Event> {
  }

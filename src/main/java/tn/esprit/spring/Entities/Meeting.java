@@ -19,7 +19,7 @@ import java.util.Date;
 public class Meeting implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idMeeting;
+    long id;
     @Temporal(TemporalType.DATE)
     Date dateMeeting;
     String pilote;

@@ -1,4 +1,6 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceReservationDetails {
+import tn.esprit.spring.Entities.ReservationDetails;
+
+public interface IServiceReservationDetails extends IServiceCrud<ReservationDetails> {
  }

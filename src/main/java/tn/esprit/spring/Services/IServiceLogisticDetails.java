@@ -1,4 +1,6 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceLogisticDetails {
+import tn.esprit.spring.Entities.LogisticDetails;
+
+public interface IServiceLogisticDetails extends IServiceCrud<LogisticDetails>{
  }

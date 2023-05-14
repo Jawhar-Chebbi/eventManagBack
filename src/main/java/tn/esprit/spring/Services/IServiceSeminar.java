@@ -1,4 +1,6 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceSeminar {
+import tn.esprit.spring.Entities.Seminar;
+
+public interface IServiceSeminar extends IServiceCrud<Seminar>{
  }

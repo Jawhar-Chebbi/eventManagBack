@@ -1,4 +1,6 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceMeeting {
+import tn.esprit.spring.Entities.Meeting;
+
+public interface IServiceMeeting extends IServiceCrud<Meeting>{
  }

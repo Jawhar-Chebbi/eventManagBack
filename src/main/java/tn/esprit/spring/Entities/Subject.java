@@ -17,7 +17,7 @@ import java.util.List;
 public class Subject implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idSubject;
+    long id;
     String theme;
 ///
     @ManyToOne

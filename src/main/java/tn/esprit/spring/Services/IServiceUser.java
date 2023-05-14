@@ -1,5 +1,7 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceUser {
+import tn.esprit.spring.Entities.User;
+
+public interface IServiceUser extends IServiceCrud<User>{
 
 }

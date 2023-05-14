@@ -17,7 +17,7 @@ import java.util.Date;
 public class Training implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idTraining;
+    long id;
     String formateur;
     int nbrFormateurs;
     boolean certificat;

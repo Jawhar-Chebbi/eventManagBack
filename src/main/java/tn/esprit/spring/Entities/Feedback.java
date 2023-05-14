@@ -19,7 +19,7 @@ import java.util.Date;
 public class Feedback implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idFeedback;
+    long id;
     @Temporal(TemporalType.DATE)
     Date dateFeedback;
     String commentaire;

@@ -20,7 +20,7 @@ import java.util.List;
 public class Logistics  implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idLogistics;
+    long id;
     double totalCost;
     @OneToOne
     Event event;

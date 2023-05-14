@@ -1,4 +1,6 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceTraining {
+import tn.esprit.spring.Entities.Training;
+
+public interface IServiceTraining extends IServiceCrud<Training> {
  }

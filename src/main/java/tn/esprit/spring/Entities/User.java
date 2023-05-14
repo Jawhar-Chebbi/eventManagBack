@@ -2,6 +2,8 @@ package tn.esprit.spring.Entities;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import tn.esprit.spring.Entities.Enum.Role;
+import tn.esprit.spring.Entities.Enum.Sexe;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -18,7 +20,7 @@ import java.util.List;
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idUser;
+    long id;
     String firstname;
     String lastname;
     String password;

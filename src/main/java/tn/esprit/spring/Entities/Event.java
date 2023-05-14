@@ -2,6 +2,7 @@ package tn.esprit.spring.Entities;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import tn.esprit.spring.Entities.Enum.Status;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -19,7 +20,7 @@ import java.util.List;
 public class Event implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idEvent;
+    long id;
     @Temporal(TemporalType.DATE)
     Date dateEvent;
     String adressEvent;

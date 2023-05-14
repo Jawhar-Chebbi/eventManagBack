@@ -18,7 +18,7 @@ import java.util.Date;
 public class Seminar implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long idSeminar;
+    long id;
     @Temporal(TemporalType.DATE)
     Date dateSeminar;
     String lieu;

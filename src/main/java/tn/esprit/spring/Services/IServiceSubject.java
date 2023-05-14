@@ -1,4 +1,6 @@
 package tn.esprit.spring.Services;
 
-public interface IServiceSubject {
+import tn.esprit.spring.Entities.Subject;
+
+public interface IServiceSubject extends IServiceCrud<Subject> {
  }
