@@ -12,4 +12,6 @@ public interface IServiceCrud<T> {
 
  List<T> findAll();
 
+ T findById(Long id);
+
 }
