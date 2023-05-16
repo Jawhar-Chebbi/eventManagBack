@@ -39,7 +39,7 @@ public class CrudService<T>  {
         if(!oldData.isPresent()){
             return null;
         }
-        T updatedData = this.crudRepo.saveAndFlush(data);
+        T updatedData = this.crudRepo.save(data);
         return updatedData;
     }
 
@@ -50,5 +50,15 @@ public class CrudService<T>  {
         log.info("Find by ID end");
 
         this.crudRepo.deleteById(id);
+    }
+
+    public T findById(Long id) {
+        log.info("find by id ");
+        Optional<T> data = this.crudRepo.findOneById(id);
+        if(data.isPresent()){
+            return data.get();
+        }
+        log.info("ERROR while obtaining data from database");
+        return null ;
     }
 }

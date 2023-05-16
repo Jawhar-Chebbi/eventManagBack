@@ -45,6 +45,11 @@ public class CrudController<T> {
         return new ResponseEntity<>(true, HttpStatus.OK);
     }
 
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<T> findById(@PathVariable("id") Long id) {
+        return new ResponseEntity<>(this.iServiceCrud.findById(id), HttpStatus.OK);
+    }
+
 
 }
 
