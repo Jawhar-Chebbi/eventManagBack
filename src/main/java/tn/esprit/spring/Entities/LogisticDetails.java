@@ -21,6 +21,8 @@ public class LogisticDetails implements Serializable {
     long id;
     double cost;
     String libele;
+    double participants;
     @ManyToOne
+    @JoinColumn(name = "logistics_id") // Specify the foreign key column name
     Logistics logistics;
 }

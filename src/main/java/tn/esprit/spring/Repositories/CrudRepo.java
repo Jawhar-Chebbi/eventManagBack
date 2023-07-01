@@ -16,4 +16,5 @@ public interface CrudRepo<T,Long> extends JpaRepository<T, Long>, JpaSpecificati
     Optional<T> findOneById(@Param("id") long id);
 
 
+
 }

@@ -5,6 +5,4 @@ import tn.esprit.spring.Entities.Reservation;
 
 @Repository
 public interface ReservationRepo extends CrudRepo<Reservation,Long> {
-
-
 }
