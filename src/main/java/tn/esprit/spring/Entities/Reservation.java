@@ -32,8 +32,4 @@ public class Reservation implements Serializable {
     @OneToOne
     Billing billing;
 
-
-
-
-
 }

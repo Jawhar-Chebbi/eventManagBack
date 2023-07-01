@@ -1,12 +1,12 @@
 package tn.esprit.spring.Entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -25,6 +25,7 @@ public class Logistics  implements Serializable {
     String commentaire;
     @Temporal(TemporalType.DATE)
     Date datelogistic;
+    @JsonIgnore()
     @OneToOne
     Event event;
     @OneToMany(mappedBy = "logistics", cascade = CascadeType.ALL)
