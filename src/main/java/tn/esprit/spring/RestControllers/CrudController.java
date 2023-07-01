@@ -12,6 +12,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @Slf4j
+
 public class CrudController<T> {
 
     public static final String ROOT_ENDPOINT = "/api";
@@ -43,11 +44,6 @@ public class CrudController<T> {
     public ResponseEntity<Boolean> delete(@PathVariable("id") Long id) {
         this.iServiceCrud.deleteData(id);
         return new ResponseEntity<>(true, HttpStatus.OK);
-    }
-
-    @GetMapping(value = "/{id}")
-    public ResponseEntity<T> findById(@PathVariable("id") Long id) {
-        return new ResponseEntity<>(this.iServiceCrud.findById(id), HttpStatus.OK);
     }
 
 
