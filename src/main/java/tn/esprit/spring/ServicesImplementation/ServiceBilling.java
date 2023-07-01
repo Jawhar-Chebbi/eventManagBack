@@ -13,6 +13,4 @@ public class ServiceBilling extends CrudService<Billing> implements IServiceBill
     public ServiceBilling(BillingRepo billingRepo) {
         super(billingRepo);
     }
-
-
 }

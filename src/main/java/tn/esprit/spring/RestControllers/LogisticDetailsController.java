@@ -1,12 +1,13 @@
 
 package tn.esprit.spring.RestControllers;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import tn.esprit.spring.Entities.LogisticDetails;
 import tn.esprit.spring.Services.IServiceLogisticDetails;
 
+
 @RestController
+@CrossOrigin
 @RequestMapping(value = LogisticDetailsController.ENDPOINT)
 public class LogisticDetailsController extends CrudController<LogisticDetails>{
 

@@ -14,4 +14,7 @@ public class ServiceLogisticDetails  extends CrudService<LogisticDetails> implem
     public ServiceLogisticDetails(LogisticDetailsRepo logisticDetailsRepo) {
         super(logisticDetailsRepo);
     }
+
+
+
 }

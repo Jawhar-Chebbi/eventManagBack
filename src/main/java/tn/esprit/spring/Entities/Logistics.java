@@ -22,9 +22,13 @@ public class Logistics  implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     double totalCost;
+    String commentaire;
+    @Temporal(TemporalType.DATE)
+    Date datelogistic;
     @JsonIgnore()
     @OneToOne
     Event event;
-    @OneToMany
+    @OneToMany(mappedBy = "logistics", cascade = CascadeType.ALL)
     List<LogisticDetails> logisticDetails;
+
 }
