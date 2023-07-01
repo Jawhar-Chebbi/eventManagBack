@@ -1,12 +1,12 @@
 package tn.esprit.spring.Entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -22,6 +22,7 @@ public class Logistics  implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
     double totalCost;
+    @JsonIgnore()
     @OneToOne
     Event event;
     @OneToMany
